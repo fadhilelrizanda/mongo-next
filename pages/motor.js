@@ -39,7 +39,11 @@ export default function Motor() {
         {post.map((data) => {
           return (
             <div>
-              <button type="button" class="btn btn-primary mt-5">
+              <button
+                key={data.id}
+                type="button"
+                className="btn btn-primary mt-5"
+              >
                 {moment(data.subscribeDate).format("MMMM Do YYYY, h:mm:ss a")}
               </button>
 
