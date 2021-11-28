@@ -38,7 +38,7 @@ export default function Motor() {
       <main className={styles.main}>
         {post.map((data) => {
           return (
-            <div>
+            <div key={data.id}>
               <button
                 key={data.id}
                 type="button"
