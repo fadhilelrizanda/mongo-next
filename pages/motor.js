@@ -44,7 +44,7 @@ export default function Motor() {
                 type="button"
                 className="btn btn-primary mt-5"
               >
-                {moment(data.subscribeDate).format("MMMM Do YYYY, h:mm:ss a")}
+                {moment(data.subscribeDate).format("MMMM Do YYYY, h:mm:ss:SSS")}
               </button>
 
               <table key={data.id} className="table mt-5">
